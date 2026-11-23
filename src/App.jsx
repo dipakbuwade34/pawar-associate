@@ -66,12 +66,12 @@ function App() {
       {/* NAVBAR */}
       <header className="navbar">
         <div className="logo">
-          <span>PA</span>
-          <div>
-            <h2>PAWAR ASSOCIATE</h2>
-            <small>REAL ESTATE • BHOPAL</small>
-          </div>
-        </div>
+       <img
+       src="/logo.png"
+        alt="Pawar Associate Real Estate Bhopal"
+       />
+       </div>
+        
 
         <nav>
           <a href="#home">Home</a>

@@ -304,3 +304,15 @@ footer small {
     min-height: 450px;
   }
 }
+
+.logo img {
+  width: 170px;
+  height: 80px;
+  object-fit: contain;
+  display: block;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
