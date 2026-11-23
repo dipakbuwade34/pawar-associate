@@ -1,0 +1,306 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #17243a;
+}
+
+.navbar {
+  background: #0b1c35;
+  color: white;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo span {
+  border: 2px solid #c9a45c;
+  color: #c9a45c;
+  padding: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo h2 {
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+
+.logo small {
+  color: #c9a45c;
+  letter-spacing: 2px;
+  font-size: 10px;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar nav a:hover {
+  color: #c9a45c;
+}
+
+.hero {
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+  background:
+    linear-gradient(90deg, #07162bea, #07162b77),
+    url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600")
+    center/cover;
+  color: white;
+}
+
+.hero-content > p:first-child {
+  color: #c9a45c;
+  letter-spacing: 3px;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 65px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #d5b16d;
+}
+
+.hero-content > p:nth-of-type(2) {
+  color: #ddd;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.main-btn {
+  display: inline-block;
+  background: #c9a45c;
+  color: #0b1c35;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.main-btn:hover {
+  background: white;
+}
+
+.search-section {
+  background: white;
+  max-width: 1000px;
+  margin: -30px auto 50px;
+  padding: 25px;
+  box-shadow: 0 5px 25px #0002;
+  display: flex;
+  gap: 15px;
+  position: relative;
+}
+
+.search-section input,
+.search-section select {
+  padding: 15px;
+  border: 1px solid #ddd;
+  flex: 1;
+  min-width: 0;
+  outline-color: #c9a45c;
+}
+
+.properties {
+  padding: 50px 7%;
+  text-align: center;
+}
+
+.subtitle {
+  color: #b28b4a;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.properties h2,
+.about h2 {
+  font-size: 36px;
+  margin: 15px 0 35px;
+  color: #0b1c35;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.property-card {
+  background: white;
+  text-align: left;
+  box-shadow: 0 5px 20px #0001;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.property-card:hover {
+  transform: translateY(-7px);
+}
+
+.property-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.property-info {
+  padding: 20px;
+}
+
+.property-info span {
+  color: #b28b4a;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.property-info h3 {
+  margin: 10px 0;
+  color: #0b1c35;
+}
+
+.property-info p {
+  color: #777;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.property-info .price {
+  color: #b28b4a;
+  font-size: 19px;
+}
+
+.contact-btn {
+  display: block;
+  background: #0b1c35;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+  margin-top: 15px;
+}
+
+.contact-btn:hover {
+  background: #c9a45c;
+  color: #0b1c35;
+}
+
+.about {
+  background: white;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.about p:last-child {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.8;
+  color: #777;
+}
+
+.contact {
+  background: #0b1c35;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.contact p {
+  margin-bottom: 25px;
+  color: #ddd;
+}
+
+.contact a {
+  display: inline-block;
+  padding: 14px 25px;
+  background: #c9a45c;
+  color: #0b1c35;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background: #07162b;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  line-height: 2;
+}
+
+footer h3 {
+  color: #c9a45c;
+  letter-spacing: 2px;
+}
+
+footer small {
+  color: #aaa;
+}
+
+@media (max-width: 900px) {
+  .property-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .navbar nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .search-section {
+    margin: 20px;
+    flex-direction: column;
+  }
+
+  .property-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 450px;
+  }
+}
